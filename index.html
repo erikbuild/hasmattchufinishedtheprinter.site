@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Has @mattchu finished his printer builds?</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      background: #0b0b0f;
+      color: #f2f2f7;
+    }
+    .wrap {
+      width: min(1000px, calc(100vw - 32px));
+    }
+    h1 {
+      margin: 0 0 18px;
+      font-size: clamp(22px, 3.2vw, 34px);
+      font-weight: 700;
+      text-align: center;
+      letter-spacing: 0.2px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+    @media (min-width: 700px) {
+      .grid { grid-template-columns: 1fr 1fr 1fr; }
+    }
+    .card {
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 18px;
+      padding: 22px;
+      background: rgba(255,255,255,0.04);
+      backdrop-filter: blur(6px);
+      min-height: 160px;
+      display: grid;
+      align-content: center;
+      justify-items: center;
+      gap: 10px;
+    }
+    .label {
+      font-size: 25px;
+      opacity: 0.9;
+    }
+    .status {
+      font-size: 56px;
+      font-weight: 800;
+      letter-spacing: 0.6px;
+    }
+    .substatus {
+      font-size: 25px;
+      color: #888888;
+    }
+    footer {
+      margin-top: 14px;
+      text-align: center;
+      font-size: 12px;
+      opacity: 0.55;
+    }
+    a { color: inherit; }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <h1>Has @mattchu finished his printer builds?</h1>
+
+    <section class="grid" aria-label="Build status">
+      <div class="card" role="group" aria-label="Voron v0.2 status">
+        <div class="label">Voron v0.2:</div>
+        <div class="status">❌ No</div>
+        <div class="substatus">(pending cereal 🥣 👀)</div>
+        <img src="https://docs.vorondesign.com/images/voron_design_logo.png" width="150" />
+      </div>
+      <div class="card" role="group" aria-label="Voron Trident status">
+        <div class="label">Voron Trident:</div>
+        <div class="status">❌ No</div>
+        <img src="https://docs.vorondesign.com/images/voron_design_logo.png" width="150" />
+      </div>
+
+      <div class="card" role="group" aria-label="Prusawire status">
+        <div class="label">Prusawire:</div>
+        <div class="status">❌ No 😭</div>
+        <img src="https://prusawire.positron3d.com/images/positron-prusawire.png" width="150" />
+      </div>
+    </section>
+
+    <footer>
+      hasmattchufinishedtheprinter.site
+    </footer>
+  </main>
+</body>
+</html>
