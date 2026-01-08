@@ -25,6 +25,12 @@
       text-align: center;
       letter-spacing: 0.2px;
     }
+    .outergrid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+      margin-bottom: 20px;
+    }
     .grid {
       display: grid;
       grid-template-columns: 1fr;
@@ -33,6 +39,7 @@
     }
     @media (min-width: 700px) {
       .grid { grid-template-columns: 1fr 1fr 1fr; }
+      .outergrid { grid-template-columns: 1fr 1fr 1fr; }
     }
     .card {
       border: 1px solid rgba(255,255,255,0.12);
@@ -75,167 +82,168 @@
    <h1>posi/west/voron/kb3d project tracker</h1><br />
 
     <h4>this originally was a troll, made with love, for @mattchu to finish his prusawire. he still has not received a cereal.</h4>
-
-    <h1>chube</h1>
-    <section class="grid">
-      <div class="card" role="group">
-        <div class="label">chube compact</div>
-        <div class="status">+2 weeks</div>
-        <div class="substatus">stop asking</div>
-        <img src="https://www.lukeslabonline.com/cdn/shop/files/Crop_Logo-removebg-preview_20782849-c836-4335-bac7-2fe3e4637095.png?height=60&v=1667431066" height="30" />
-      </div>
-    </section>
-    
-    <h1>@erikbuild</h1>
-    <section class="grid">
-      <div class="card" role="group">
-        <div class="label">Gates Sonic Belt for @PFMakes and Prusawire/Positron</div>
-        <div class="status">❌ No</div>
-        <img src="https://avatars.githubusercontent.com/u/121259804?s=200&v=4" height="40" />
-      </div>
+    <div class="outergrid">
+      <h1>chube</h1>
+      <section class="grid">
+        <div class="card" role="group">
+          <div class="label">chube compact</div>
+          <div class="status">+2 weeks</div>
+          <div class="substatus">stop asking</div>
+          <img src="https://www.lukeslabonline.com/cdn/shop/files/Crop_Logo-removebg-preview_20782849-c836-4335-bac7-2fe3e4637095.png?height=60&v=1667431066" height="30" />
+        </div>
+      </section>
       
-      <div class="card" role="group">
-        <div class="label">CoralWave Positron</div>
-        <div class="status">❌ No 😭</div>
-        <img src="https://avatars.githubusercontent.com/u/121259804?s=200&v=4" height="40" />
-      </div>
-      
-      <div class="card" role="group">
-        <div class="label">Assembly Manual</div>
-        <div class="status">❌ No 😭</div>
-        <img src="https://prusawire.positron3d.com/images/positron-prusawire.png" width="150" />
-      </div>
-      
-      <div class="card" role="group">
-        <div class="label">Prusawire Configurator</div>
-        <div class="status">❌ No</div>
-        <img src="https://prusawire.positron3d.com/images/positron-prusawire.png" width="150" />
-      </div>
-      
-      <div class="card" role="group">
-        <div class="label">Voron v2.4</div>
-        <div class="status">❌ No</div>
-        <img src="https://docs.vorondesign.com/images/voron_design_logo.png" width="150" />
-      </div>
-      
-      <div class="card" role="group">
-        <div class="label">Milo v2 + Casa</div>
-        <div class="status">❌ No</div>
-      </div>
-      
-      <div class="card" role="group">
-        <div class="label">Robot Lawnmower 🤖</div>
-        <div class="status">❌ No</div>
-      </div>
-    </section>
-    
-    <h1>@Safe</h1>
-    <section class="grid">
-     <div class="card" role="group">
-        <div class="label">Prusawire CAD</div>
-        <div class="status">❌ No 😭</div>
-        <img src="https://prusawire.positron3d.com/images/positron-prusawire.png" width="150" />
-      </div>
-      
-      <div class="card" role="group">
-        <div class="label">🧸🖼️</div>
-        <div class="status">❌ No</div>
-        <img src="https://prusawire.positron3d.com/images/positron-prusawire.png" width="150" />
-      </div>
-      
-      <div class="card" role="group">
-        <div class="label">1️⃣2️⃣⚡️</div>
-        <div class="status">❌ No</div>
-        <img src="https://prusawire.positron3d.com/images/positron-prusawire.png" width="150" />
-      </div>
-
-      <div class="card" role="group">
-        <div class="label">blame @erikbuild for all problems</div>
-        <div class="status">on-going</div>
-        <img src="https://prusawire.positron3d.com/images/positron-prusawire.png" width="150" />
-      </div>
-    </section>
-    
-    <h1>@mattchu</h1>
-    <section class="grid">
-      <div class="card" role="group">
-        <div class="label">Voron v0.2:</div>
-        <div class="status">✅ yes!</div>
-        <div class="substatus">congrats on cereal 🥣</div>
-        <img src="https://docs.vorondesign.com/images/voron_design_logo.png" width="150" />
-      </div>
-      <div class="card" role="group">
-        <div class="label">Voron Trident:</div>
-        <div class="status">❌ No</div>
-        <img src="https://docs.vorondesign.com/images/voron_design_logo.png" width="150" />
-      </div>
-
-      <div class="card" role="group">
-        <div class="label">Prusawire:</div>
-        <div class="status">❌ No 😭</div>
-        <img src="https://prusawire.positron3d.com/images/positron-prusawire.png" width="150" />
-      </div>
-    </section>
-
-    <h1>@machinza_luke'slab</h1>
-    <section class="grid">
-     <div class="card" role="group">
-        <div class="label">v2.4</div>
-        <div class="status">❌ No</div>
-        <img src="https://docs.vorondesign.com/images/voron_design_logo.png" width="150" />
-      </div>
-    </section>
+      <h1>@erikbuild</h1>
+      <section class="grid">
+        <div class="card" role="group">
+          <div class="label">Gates Sonic Belt for @PFMakes and Prusawire/Positron</div>
+          <div class="status">❌ No</div>
+          <img src="https://avatars.githubusercontent.com/u/121259804?s=200&v=4" height="40" />
+        </div>
         
-    <h1>@birb</h1>
-    <section class="grid">
-     <div class="card" role="group">
-        <div class="label">Micron</div>
-        <div class="status">❌ No</div>
-        <img src="https://docs.vorondesign.com/images/voron_design_logo.png" width="150" />
-      </div>
-      <div class="card" role="group">
-        <div class="label">is a birb</div>
-        <div class="status">✅ assumed yes</div>
-        <img src="https://avatars.githubusercontent.com/u/121259804?s=200&v=4" height="40" />
-      </div>
-    </section>
-    
-    <h1>@infinity</h1>
-    <section class="grid">
-     <div class="card" role="group">
-        <div class="label">special pcb bed</div>
-        <div class="status">❌ No</div>
-        <img src="" width="150" />🤔
-      </div>
-    </section>
-    
-    <h1>@samplename</h1>
-    <section class="grid">
-     <div class="card" role="group">
-        <div class="label">[redacted]</div>
-        <div class="status">❌ No</div>
-        <img src="https://avatars.githubusercontent.com/u/121259804?s=200&v=4" height="40" />🤔
-      </div>
-    </section>
-    
-    <h1>@whiskeysjelly</h1>
-    <section class="grid">
-     <div class="card" role="group">
-        <div class="label">A5T</div>
-        <div class="status">❌ No</div>
-        <img src="https://media.tenor.com/aDteIAX68QsAAAAM/burn-elmo.gif" width="150" />
-      </div>
-    </section>
-
-    <h1>@laika</h1>
-    <h4>laika asked to be on here 🙄</h4>
-    <section class="grid">
-     <div class="card" role="group">
-        <div class="label">Prusawire</div>
-        <div class="status">❌ No</div>
-        <img src="https://prusawire.positron3d.com/images/positron-prusawire.png" width="150" />
-      </div>
-    </section>
+        <div class="card" role="group">
+          <div class="label">CoralWave Positron</div>
+          <div class="status">❌ No 😭</div>
+          <img src="https://avatars.githubusercontent.com/u/121259804?s=200&v=4" height="40" />
+        </div>
+        
+        <div class="card" role="group">
+          <div class="label">Assembly Manual</div>
+          <div class="status">❌ No 😭</div>
+          <img src="https://prusawire.positron3d.com/images/positron-prusawire.png" width="150" />
+        </div>
+        
+        <div class="card" role="group">
+          <div class="label">Prusawire Configurator</div>
+          <div class="status">❌ No</div>
+          <img src="https://prusawire.positron3d.com/images/positron-prusawire.png" width="150" />
+        </div>
+        
+        <div class="card" role="group">
+          <div class="label">Voron v2.4</div>
+          <div class="status">❌ No</div>
+          <img src="https://docs.vorondesign.com/images/voron_design_logo.png" width="150" />
+        </div>
+        
+        <div class="card" role="group">
+          <div class="label">Milo v2 + Casa</div>
+          <div class="status">❌ No</div>
+        </div>
+        
+        <div class="card" role="group">
+          <div class="label">Robot Lawnmower 🤖</div>
+          <div class="status">❌ No</div>
+        </div>
+      </section>
+      
+      <h1>@Safe</h1>
+      <section class="grid">
+       <div class="card" role="group">
+          <div class="label">Prusawire CAD</div>
+          <div class="status">❌ No 😭</div>
+          <img src="https://prusawire.positron3d.com/images/positron-prusawire.png" width="150" />
+        </div>
+        
+        <div class="card" role="group">
+          <div class="label">🧸🖼️</div>
+          <div class="status">❌ No</div>
+          <img src="https://prusawire.positron3d.com/images/positron-prusawire.png" width="150" />
+        </div>
+        
+        <div class="card" role="group">
+          <div class="label">1️⃣2️⃣⚡️</div>
+          <div class="status">❌ No</div>
+          <img src="https://prusawire.positron3d.com/images/positron-prusawire.png" width="150" />
+        </div>
+  
+        <div class="card" role="group">
+          <div class="label">blame @erikbuild for all problems</div>
+          <div class="status">on-going</div>
+          <img src="https://prusawire.positron3d.com/images/positron-prusawire.png" width="150" />
+        </div>
+      </section>
+      
+      <h1>@mattchu</h1>
+      <section class="grid">
+        <div class="card" role="group">
+          <div class="label">Voron v0.2:</div>
+          <div class="status">✅ yes!</div>
+          <div class="substatus">congrats on cereal 🥣</div>
+          <img src="https://docs.vorondesign.com/images/voron_design_logo.png" width="150" />
+        </div>
+        <div class="card" role="group">
+          <div class="label">Voron Trident:</div>
+          <div class="status">❌ No</div>
+          <img src="https://docs.vorondesign.com/images/voron_design_logo.png" width="150" />
+        </div>
+  
+        <div class="card" role="group">
+          <div class="label">Prusawire:</div>
+          <div class="status">❌ No 😭</div>
+          <img src="https://prusawire.positron3d.com/images/positron-prusawire.png" width="150" />
+        </div>
+      </section>
+  
+      <h1>@machinza_luke'slab</h1>
+      <section class="grid">
+       <div class="card" role="group">
+          <div class="label">v2.4</div>
+          <div class="status">❌ No</div>
+          <img src="https://docs.vorondesign.com/images/voron_design_logo.png" width="150" />
+        </div>
+      </section>
+          
+      <h1>@birb</h1>
+      <section class="grid">
+       <div class="card" role="group">
+          <div class="label">Micron</div>
+          <div class="status">❌ No</div>
+          <img src="https://docs.vorondesign.com/images/voron_design_logo.png" width="150" />
+        </div>
+        <div class="card" role="group">
+          <div class="label">is a birb</div>
+          <div class="status">✅ assumed yes</div>
+          <img src="https://avatars.githubusercontent.com/u/121259804?s=200&v=4" height="40" />
+        </div>
+      </section>
+      
+      <h1>@infinity</h1>
+      <section class="grid">
+       <div class="card" role="group">
+          <div class="label">special pcb bed</div>
+          <div class="status">❌ No</div>
+          <img src="" width="150" />🤔
+        </div>
+      </section>
+      
+      <h1>@samplename</h1>
+      <section class="grid">
+       <div class="card" role="group">
+          <div class="label">[redacted]</div>
+          <div class="status">❌ No</div>
+          <img src="https://avatars.githubusercontent.com/u/121259804?s=200&v=4" height="40" />🤔
+        </div>
+      </section>
+      
+      <h1>@whiskeysjelly</h1>
+      <section class="grid">
+       <div class="card" role="group">
+          <div class="label">A5T</div>
+          <div class="status">❌ No</div>
+          <img src="https://media.tenor.com/aDteIAX68QsAAAAM/burn-elmo.gif" width="150" />
+        </div>
+      </section>
+  
+      <h1>@laika</h1>
+      <h4>laika asked to be on here 🙄</h4>
+      <section class="grid">
+       <div class="card" role="group">
+          <div class="label">Prusawire</div>
+          <div class="status">❌ No</div>
+          <img src="https://prusawire.positron3d.com/images/positron-prusawire.png" width="150" />
+        </div>
+      </section>
+    </div>
     
     <footer>
       the work is mysterious _and_ important <a href="https://github.com/erikbuild/hasmattchufinishedtheprinter.site">https://github.com/erikbuild/hasmattchufinishedtheprinter.site</a>
