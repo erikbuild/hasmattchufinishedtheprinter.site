@@ -71,13 +71,13 @@ function activateKonamiMode() {
     document.head.appendChild(style);
   }
 
-  // Revert after 3 seconds
+  // Revert after 5 seconds
   setTimeout(() => {
     statuses.forEach((s, i) => {
       s.innerHTML = originals[i];
       s.style.color = '';
     });
-  }, 3000);
+  }, 5000);
 }
 
 // 3. Frustrated No-Clicker
@@ -194,14 +194,14 @@ function fakeYes() {
       s.innerHTML = 'jk lol';
       s.style.color = '#ff6b6b';
     });
-  }, 1500);
+  }, 3000);
 
   setTimeout(() => {
     noStatuses.forEach((s, i) => {
       s.innerHTML = originals[i];
       s.style.color = '';
     });
-  }, 2500);
+  }, 5000);
 }
 
 document.addEventListener('keydown', (e) => {
