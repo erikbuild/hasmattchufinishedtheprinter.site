@@ -39,7 +39,7 @@ body {
   padding: 10px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 14px;
+  gap: 15px;
   margin-bottom: 20px;
   min-width: 0;
 }
